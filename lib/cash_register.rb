@@ -3,7 +3,7 @@ class CashRegister
     @total = 0
   end
 
-  def discount(d)
-    @discount = d
+  def discount(x = 0)
+    @discount = x
   end
 end
