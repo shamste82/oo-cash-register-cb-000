@@ -15,6 +15,7 @@ class CashRegister
 
   def apply_discount
     self.total -= self.total / 100 * self.discount
+    puts "#{self.discount}"
     if self.discount == 0
       result = "There is no discount to apply."
     else
