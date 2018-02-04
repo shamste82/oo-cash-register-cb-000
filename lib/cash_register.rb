@@ -5,6 +5,6 @@ class CashRegister
   end
 
   def discount(x = 0)
-
+    x
   end
 end
