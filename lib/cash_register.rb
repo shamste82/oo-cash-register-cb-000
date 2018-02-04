@@ -6,6 +6,7 @@ class CashRegister
   end
 
   def discount(x = nil)
+    @total = 0
     @discount = x
   end
 end
