@@ -6,6 +6,5 @@ class CashRegister
 
   def discount(x = nil)
     @discount = x
-    self.discount = x
   end
 end
