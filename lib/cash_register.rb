@@ -27,7 +27,7 @@ class CashRegister
   end
 
   def items
-    @all << self.title
+    @all << @title
     @all
   end
 end
