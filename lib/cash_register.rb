@@ -14,7 +14,6 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
     quantity.times { |item| @@all << title}
-    puts "#{@@all}"
   end
 
   def apply_discount
