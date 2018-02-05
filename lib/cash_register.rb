@@ -25,5 +25,5 @@ class CashRegister
   end
 
   def items
-
+    self.all << self
 end
