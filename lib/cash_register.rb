@@ -24,6 +24,6 @@ class CashRegister
     result
   end
 
-  def class.items
+  def self.items
     @all << self
 end
