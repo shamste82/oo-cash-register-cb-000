@@ -12,8 +12,8 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    @all << title
     self.total += price * quantity
+    quantity.each { |item| total << title}
   end
 
   def apply_discount
