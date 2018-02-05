@@ -13,7 +13,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
-    quantity.each { |item| @@all << title}
+    quantity.times { |item| @@all << title}
     puts "#{@@all}"
   end
 
