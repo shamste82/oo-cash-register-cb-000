@@ -3,6 +3,7 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0
     @discount = 0
+    @all = Array.new
   end
 
   def discount(x = 20)
@@ -22,4 +23,7 @@ class CashRegister
     end
     result
   end
+
+  def items
+
 end
