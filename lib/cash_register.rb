@@ -4,6 +4,7 @@ class CashRegister
     @total = 0
     @discount = 0
     @all = Array.new
+    @title = ""
   end
 
   def discount(x = 20)
