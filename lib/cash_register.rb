@@ -20,6 +20,6 @@ class CashRegister
     else
       result = "After the discount, the total comes to $#{self.total}."
     end
-    result.to_f
+    result
   end
 end
