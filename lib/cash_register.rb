@@ -1,6 +1,6 @@
 class CashRegister
   attr_accessor :total, :discount
-  def initialize(discount = 0)
+  def initialize(discount = 20)
     @total = 0
     @discount = 0
   end
@@ -19,7 +19,6 @@ class CashRegister
     if self.discount == 0
       result = "There is no discount to apply."
     else
-      puts "#{@discount}"
       result = "After the discount, the total comes to $#{self.total}."
     end
     result
