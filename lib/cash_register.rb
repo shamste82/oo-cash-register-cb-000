@@ -3,7 +3,7 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0
     @discount = 0
-    @all = Array.new
+    @@all = Array.new
     @title = ""
   end
 
@@ -13,7 +13,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
-    quantity.each { |item| @all << title}
+    quantity.each { |item| @@all << title}
   end
 
   def apply_discount
@@ -27,6 +27,6 @@ class CashRegister
   end
 
   def items
-    @all
+    @@all
   end
 end
